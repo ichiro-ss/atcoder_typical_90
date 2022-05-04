@@ -11,7 +11,6 @@ used = [[False for _ in range(20)] for _ in range(20)]
 def dfs(sx, sy, px, py):
     if sx == px and sy == py and used[px][py]:
         return 0
-        exit()
     used[px][py] = True
 
     ret = -10000
