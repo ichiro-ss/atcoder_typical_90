@@ -4,7 +4,8 @@ s = str(input())
 target = "atcoder"
 mod = 10 ** 9 + 7
 
-# dp[i][j]: use till s[i] and make till target[j]
+# dp[i][j]: The number of ways that use up to the i-th letter of s
+# to create up to the j-th letter of target.
 dp = [[0 for _ in range(len(target)+1)] for _ in range(n+1)]
 for i in range(n+1):
     dp[i][0] = 1
