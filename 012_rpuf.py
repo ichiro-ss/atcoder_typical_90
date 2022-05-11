@@ -46,7 +46,7 @@ def are_same(x, y):
 #             ans = "Yes"
 #         print(ans)
 
-# UnionFind without rank
+# UnionFind with rank
 def unite(x, y):
     x, y = root(x), root(y)
     if x == y:
