@@ -1,7 +1,4 @@
 # input
-from multiprocessing.connection import answer_challenge
-
-
 n = int(input())
 x, y = [0] * n, [9] * n
 for i in range(n):
