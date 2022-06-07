@@ -1,9 +1,7 @@
-import math
+# input
+a, b, c = [int(_) for _ in input().split()]
 
-
-a, b, c = [int(i) for i in input().split()]
-
-# if math.log2(a) < b * math.log2(c):
-#     print("Yes")
-# else:
-#     print("No")
+if a < c ** b:
+    print("Yes")
+else:
+    print("No")
