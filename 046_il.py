@@ -16,5 +16,5 @@ for i in range(46):
     for j in range(46):
         for k in range(46):
             if not (i + j + k) % 46:
-                ans += (a_cnt[i] * b_cnt[j] * c_cnt[k])
+                ans += a_cnt[i] * b_cnt[j] * c_cnt[k]
 print(ans)
