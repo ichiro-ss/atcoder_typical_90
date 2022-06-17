@@ -8,10 +8,10 @@ for i in range(2 ** n):
     for j in range(n):
         if (i >> j) & 1:
             brac += 1
-            ans += '('
+            ans = ')' + ans
         else:
             brac -= 1
-            ans += ')'
+            ans = '(' + ans
         
         if brac < 0:
             flag = True
